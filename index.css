@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-content: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    padding:2rem 4rem;
+    column-gap:5em;
+    text-align: center;
+    background-color:#1B244A;
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+}
+
+.buttons > button {
+    background-color: transparent;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;;
+    padding:.5em;
+    border-radius:6px;
+}
+
+.clear-btn{
+    padding: .5rem 1rem;
+     background-color: white;
+    color: #1B244A;
+    font-weight: 700;
+    border: 0;
+     border-radius:6px;
+    
+}
+
+.score-indicator{
+    padding: 2rem;
+    background-color: black;
+    color: #F94F6D;
+    font-family: "Orbitron", sans-serif;
+    font-size:40px;
+}
+
+h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
